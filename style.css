@@ -4,46 +4,36 @@ body{
     padding: 5px;
 }
 
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 80px 300px 80px;
+}
+
 .header{
     background-color: rgb(76, 174, 235);
-}
-
-ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    /* Bản chất ul sẽ luôn sinh ra 1 khoảng trắng bao quanh (margin) */
-}
-
-ul li{
-    margin-right: 5px;
-}
-
-/* CSS cho HÀNG 2 */
-
-.main{
-    /* Flex Container - đây là cha */
-    display: flex;
+    grid-column: span 12;
 }
 
 .left{
     /* Flex Item - đây là con */
     background-color: rgb(245, 215, 61);
-    width: 20%;
+    grid-column: span 3;
 }
 
 .content{
     background-color: rgb(215, 80, 53);
-    width: 60%;
+    grid-column: span 6;
 }
 
 .right{
     background-color: rgb(245, 215, 61);
-    width: 20%;
+    grid-column: span 3;
 }
 
 /* CSS cho FOOTER */
 
 .footer{
     background-color: rgb(76, 174, 235);
+    grid-column: span 12;
 }
