@@ -1,0 +1,68 @@
+/* a{
+    color: blueviolet;
+}
+
+a[href^="http"]{
+    color: brown;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: blue;
+} */
+
+#header{
+}
+
+.header-inner{
+    width: 90%;
+    height: 200px;
+    margin: 20px auto;
+    display: flex;
+}
+
+.logo{
+    width: 40%;
+}
+
+.logo img{
+    width: 90%;
+}
+
+.nav{
+    width: 80%;
+    height: 100%;
+}
+
+ul.main-menu{
+    list-style-type: none; /*bỏ đi gạch chân ở đầu*/
+    display: flex;          /*kĩ thuật flex box giúp các phần tử menu1-5 xoay theo chiều ngang*/
+}
+
+ul.main-menu li{
+    margin-right: 20px;
+}
+
+ul.main-menu li a{
+    text-decoration: none;
+    color:black;
+    font-size: 90%;
+    text-transform: uppercase;  /*Viet hoa toan bo*/
+}
+
+.main-menu .sub-menu{
+    display: none;
+}
+
+ul.main-menu li a:hover{
+    color: red;
+}
+
+ul.main-menu li a:hover+.sub-menu{
+    display: block;
+}
+
+.sub-menu{
+    list-style-type: none;
+    background-color: sandybrown;
+}

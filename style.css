@@ -1,0 +1,88 @@
+body{
+    margin: 0px;
+    border: 2px solid red;
+    padding: 5px;
+}
+
+.wrapper{
+    width: 800px;
+    background-color: yellow;
+    margin: 0 auto;
+}
+/* > box-sizing của hộp parent-1: hiện tại có height= 200px; width= 500px, cả dòng chỉ có size chứa hộp .parent-1 */
+/* .parent-1{
+    box-sizing: border-box;     
+    height: 200px;
+    width: 50%;
+    background-color: aqua;
+    border: 1px solid purple;
+    float: left;
+} */
+/* > cách 1: để 2 parent-1 và parent-2 nằm sát nhau thì ta ghi cả hai là  box-sizing: border-box; 50% + %50% */
+/* .parent-2{
+    box-sizing: border-box;     
+    height: 200px;              
+    width: 50%;
+    background-color: rgb(2, 83, 63);
+    border: 1px solid purple;
+    float: right;
+} */
+
+/* Cách 2 */
+.parent-1{
+    height: 200px;
+    width: calc(50% - 2px);
+    background-color: aqua;
+    border: 1px solid purple;
+    float: left;
+}
+
+.parent-2{
+    height: 200px;
+    width: calc(50% - 2px);
+    background-color: rgb(6, 92, 31);
+    border: 1px solid purple;
+    float: right;       
+}
+
+.no-parent{
+    background-color: rgb(110, 110, 228);
+    height: 200px;
+    clear: both;
+}
+
+.no-parent img{
+    width: 200px;
+    float: right;
+} 
+
+.no-parent p{
+    text-align: justify;    /*giã đều 2 bên */
+    margin: 5px;
+    /* clear: right; */
+}
+
+nav{
+    margin-bottom: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    /* list-style-type: none; */
+    float: left;
+    margin-right: 5px;
+}
+
+ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li a:hover{
+    color: red;
+}
